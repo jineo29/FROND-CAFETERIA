@@ -28,7 +28,6 @@ function Header() {
         Correo: formData.get("correo"),
       }),
     };
-    console.log(options.body);
     fetch(URI, options)
       .then((response) => response.json())
       .then((data) => {
