@@ -1,0 +1,41 @@
+.navbar{
+  display:flex;
+  justify-content: space-between;
+}
+.logo{
+  display:flex;
+  justify-content: space-between;
+  width: 10%;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  font-size: 15px;
+
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #ffffff; 
+  width: 20%;
+  border: 0;
+  padding: 10px;
+  border-radius: 30%;
+  color: #000000;
+  font-size: 15px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+button:hover,button:active, button:focus {
+  background: #CA6F1E;
+  color: #ffffff;
+}
+.boton {
+  margin: 20px;
+
+  display:inline ;
+  width: 140px;
+}

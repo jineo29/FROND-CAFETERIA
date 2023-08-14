@@ -1,0 +1,14 @@
+.rectangle{
+background-color: #061005;
+padding: 15px;
+}
+
+.image{
+width: 100%;
+}
+.inf1{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: #29402893;
+}
