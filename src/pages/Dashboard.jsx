@@ -1,12 +1,13 @@
 import Header from "../componentes/atomos/Header";
-import DescripcionGeneral from "../componentes/moleculas/DescripcionGeneral";
-import Carousel from "../componentes/moleculas/Carousel";
 import Footer from "../componentes/atomos/footer";
+import Land from "../componentes/moleculas/Landing"
+import Carousel from "../componentes/moleculas/Carousel"
+
 function Dashboard() {
     return (
         <div>
             <Header></Header>
-            <DescripcionGeneral></DescripcionGeneral>
+            <Land></Land>
             <Carousel></Carousel>
             <Footer></Footer>
         </div>

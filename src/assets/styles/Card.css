@@ -1,0 +1,37 @@
+div.polaroid {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    width: 24%;
+}
+
+div.container-text {
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.container-cafe {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+}
+.background-img{
+    background-image: url("../images/Rectangle 158.png");
+    background-position: right, left top;
+    background-repeat: no-repeat, repeat;
+}
+
+.polaroid:hover{
+    font-weight:700;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .2s all ease;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-10%);
+}
+

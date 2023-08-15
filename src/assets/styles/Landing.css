@@ -1,14 +1,326 @@
-.rectangle{
-background-color: #061005;
-padding: 15px;
+@import url("https://fonts.googleapis.com/css?family=Raleway:400");
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Allison&family=Life+Savers&family=Lilita+One&display=swap');
+.inf1 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.image{
-width: 100%;
+.hero-image {
+    background: url("../images/render.jpg") no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
 }
-.inf1{
-    margin-top: 10px;
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.color1{
+    font-size: 60px;
+    font-family: Lilita One;
+    text-align:right;
+    width: 60%; 
+    height: 200px; 
+    background: #F46F60;
+    padding: 60px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.img1{
+    width: 40%;
+    position: relative;
+    top: -150px;
+    left: -5px;
+}
+.conoce-peko{
+    padding-left: 40px;
+}
+.conoce{
+    width: 100%;
+    height: 400px;
+margin-bottom: 100px;
+}
+.back-cards {
+    background-image: url("../images/Cafe-back.jpg");
+    background-size: cover;
+    height: 940px;
+    position: relative;
+}
+
+.text-inf {
+    color: #DEAC15;
+    font-size: 96px;
+    font-family: Lilita One;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.text2-inf {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-family: Alata;
+    padding-bottom: 10%;
+}
+
+.card-landing {
+    background-color: rgba(255, 255, 255, 0.87);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    width: 20%;
+    border-bottom-right-radius: 30%;
+}
+.card-landing:hover {
+    background-color: rgba(255, 255, 255, 0.87);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    width: 20%;
+    border-bottom-right-radius: 30%;
+    transform: translateY(-20%);
+    transition: .5s all ease;
+
+}
+
+.card-landing2 {
+    background-color: rgba(0, 0, 0, 0.781);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    width: 20%;
+    border-bottom-right-radius: 30%;
+
+}
+.card-landing2:hover {
+    background-color: rgba(0, 0, 0, 0.781);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    width: 20%;
+    border-bottom-right-radius: 30%;
+    transform: translateY(-20%);
+    transition: .5s all ease;
+
+}
+.card-landing3 {
+    background-color: #e86637d0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    width: 20%;
+    border-bottom-right-radius: 30%;
+
+}
+.card-landing3:hover {
+    background-color: #e86637d0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    width: 20%;
+    border-bottom-right-radius: 30%;
+    transform: translateY(-20%);
+    transition: .5s all ease;
+
+}
+.number {
+    color: black;
+    font-size: 40px;
+    font-family: Alata;
+    font-weight: 400;
+    text-align: start;
+    padding: 10px 20px;
+    width: 100%;
+}
+.number2 {
+    color: #E86637;
+    font-size: 40px;
+    font-family: Alata;
+    font-weight: 400;
+    text-align: start;
+    padding: 10px 20px;
+    width: 100%;
+}
+.number3 {
+    color: #ffffff;
+    font-size: 40px;
+    font-family: Alata;
+    font-weight: 400;
+    text-align: start;
+    padding: 10px 20px;
+    width: 100%;
+}
+.title {
+    color: black;
+    font-size: 36px;
+    font-family: Alata;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+.title2 {
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    font-family: Alata;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+.description {
+    color: black;
+    font-size: 15px;
+    font-family: Alata;
+    text-align: start;
+    padding: 60px 20px;
+    width: 100%;
+}
+.description2 {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: Alata;
+    text-align: start;
+    padding: 60px 20px;
+    width: 100%;
+}
+h4{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Lilita One;
+    text-align: right;  
+    margin: 3%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+}
+
+@property --gradX {
+    syntax: '<percentage>';
+    initial-value: 50%;
+    inherits: true;
+}
+
+@property --gradY {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: true;
+}
+
+.hero-image {
+    font-family: Raleway, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    background-color: rgba(10, 12, 18, 1);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    margin: 0;
+}
+
+:root {
+    --d: 2500ms;
+    --angle: 90deg;
+    --gradX: 100%;
+    --gradY: 50%;
+    --c1: rgb(255, 255, 255);
+    --c2: rgba(168, 239, 255, 0.1);
+}
+
+.wrapper {
+    min-width: min(40rem, 100%);
+}
+
+.box {
+    font-size: 3vw;
+    margin: max(1rem, 10vw);
+    border: 0.40rem solid;
+    padding: 2vw;
+    border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+    animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.box:nth-child(2) {
+    border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+    animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+    100% {
+        --angle: 420deg;
+    }
+}
+
+@keyframes borderRadial {
+    20% {
+        --gradX: 100%;
+        --gradY: 50%;
+    }
+
+    40% {
+        --gradX: 100%;
+        --gradY: 100%;
+    }
+
+    60% {
+        --gradX: 50%;
+        --gradY: 100%;
+    }
+
+    80% {
+        --gradX: 0%;
+        --gradY: 50%;
+    }
+
+    100% {
+        --gradX: 50%;
+        --gradY: 0%;
+    }
+}
+.conocenos{
     display: flex;
     justify-content: center;
-    background-color: #29402893;
 }
+.mision{
+    width: 50%;
+    background-color: #ffffff;
+}
+.vision{
+    width: 50%;
+    background-color: #E7BE19;
+}
+.titles{
+    font-family: Lilita One;
+    font-size: 110px;
+    text-align: center;
+    text-shadow: 4px 4px 5px rgb(70, 69, 69);
+}
+.descrip-txt{
+    text-align: center;
+    font-family: Life Savers;
+    font-size: 30px;
+    margin: 10%;
+    padding-bottom: 10%;
+}
+.descrip-txt2{
+    width: 100%;
+    background-color: #8f6435af;
+    text-align: center;
+    font-family: Life Savers;
+    font-size: 30px;
+    padding: 5%;
+    height: 240px;
+}
+

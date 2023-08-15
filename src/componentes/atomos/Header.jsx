@@ -1,10 +1,12 @@
-import "../../assets/styles/HeaderStyle.css";
-import Logo from "../../assets/images/icon.png";
-import { useState, useRef } from "react";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import Modal from "react-bootstrap/Modal";
+import '../../assets/styles/HeaderStyle.css'
+import Logo from "../../assets/images/LogoPeko.png"
+import { useState, useRef } from 'react';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Modal from 'react-bootstrap/Modal';
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
+
 
 function Header() {
   const [show, setShow] = useState(false);
@@ -57,19 +59,17 @@ function Header() {
   };
   return (
     <>
-      <div className="navbar">4
-        <div className="logo">
+      <div className="navbar">
+        <div className='logo'>
           <img src={Logo} alt="logo" />
           <h1>Peko</h1>
         </div>
 
         <div>
-          <button className="boton">HOME</button>
-          <button className="boton">CONOCENOS</button>
-          <button className="boton">CONTACTO</button>
-          <button onClick={handleShow} className="boton">
-            REGISTRAR
-          </button>
+          <Link to="/" className='sinlinea'><button className='boton'>HOME</button></Link>
+          <Link to="/card" className='sinlinea'><button className='boton'>CONOCENOS</button></Link>
+          <a src="#footer" className='sinlinea'><button className='boton'>CONTACTO</button></a>
+          <button onClick={handleShow} className='boton'>REGISTRAR</button>
         </div>
       </div>
 
@@ -88,7 +88,7 @@ function Header() {
                 name="name"
               />
               <Form.Control
-                type="telephone"
+               type="telephone"
                 placeholder="Telefono"
                 autoFocus
                 name="telefono"
