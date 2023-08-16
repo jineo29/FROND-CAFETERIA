@@ -1,18 +1,28 @@
+<<<<<<< HEAD
 import "../../assets/styles/HeaderStyle.css";
 import Logo from "../../assets/images/LogoPeko.png";
 import { useState,useRef } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
+=======
+import '../../assets/styles/HeaderStyle.css'
+import Logo from "../../assets/images/LogoPeko.png"
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Modal from 'react-bootstrap/Modal';
+>>>>>>> 0aed0bdb88d8a9f2ddd3e25d0a87b9cdc0208e1f
 import { Link } from "react-router-dom";
-import Swal from "sweetalert2";
 
 
 
 function Header() {
   const [show, setShow] = useState(false);
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+<<<<<<< HEAD
   const formdata = useRef();
 
   const handlerClick = (e) => {
@@ -75,27 +85,21 @@ function Header() {
       });
   };
 
+=======
+>>>>>>> 0aed0bdb88d8a9f2ddd3e25d0a87b9cdc0208e1f
   return (
     <>
       <div className="navbar">
-        <div className="logo">
+        <div className='logo'>
           <img src={Logo} alt="logo" />
           <h1>Peko</h1>
         </div>
 
         <div>
-          <Link to="/" className="sinlinea">
-            <button className="boton">HOME</button>
-          </Link>
-          <Link to="/card" className="sinlinea">
-            <button className="boton">CONOCENOS</button>
-          </Link>
-          <a src="#footer" className="sinlinea">
-            <button className="boton">CONTACTO</button>
-          </a>
-          <button onClick={handleShow} className="boton">
-            REGISTRAR
-          </button>
+          <Link to="/" className='sinlinea'><button className='boton'>HOME</button></Link>
+          <Link to="/card" className='sinlinea'><button className='boton'>CONOCENOS</button></Link>
+          <a src="#footer" className='sinlinea'><button className='boton'>CONTACTO</button></a>
+          <button onClick={handleShow} className='boton'>REGISTRAR</button>
         </div>
       </div>
       <Modal show={show} onHide={handleClose}>
@@ -103,26 +107,23 @@ function Header() {
           <Modal.Title>Registrate</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form ref={formdata}>
+          <Form>
             <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
               <Form.Label>Email address</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Nombre"
                 autoFocus
-                name="name"
               />
               <Form.Control
                 type="telephone"
                 placeholder="Telefono"
                 autoFocus
-                name="telefono"
               />
               <Form.Control
                 type="email"
                 placeholder="Correo"
                 autoFocus
-                name="correo"
               />
             </Form.Group>
           </Form>
@@ -131,7 +132,7 @@ function Header() {
           <Button variant="secondary" onClick={handleClose}>
             Cerrar
           </Button>
-          <Button variant="primary" onClick={handlerClick}>
+          <Button variant="primary" onClick={handleClose}>
             Enviar
           </Button>
         </Modal.Footer>
