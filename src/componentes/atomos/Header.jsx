@@ -1,11 +1,13 @@
 import "../../assets/styles/HeaderStyle.css";
 import Logo from "../../assets/images/LogoPeko.png";
-import { useState, useRef } from "react";
+import { useState,useRef } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
+
+
 
 function Header() {
   const [show, setShow] = useState(false);
@@ -21,7 +23,6 @@ function Header() {
       .then((response) => response.json())
       .then((correosExistentes) => {
         const listaCorreos = correosExistentes.map((correos) => correos.Correo);
-
         if (listaCorreos.includes(correo)) {
           Swal.fire({
             icon: "error",
@@ -41,7 +42,6 @@ function Header() {
               Correo: correo,
             }),
           };
-
           fetch(URI, opciones)
             .then((response) => response.json())
             .then((data) => {
@@ -74,6 +74,7 @@ function Header() {
         console.error("Error:", error);
       });
   };
+
   return (
     <>
       <div className="navbar">
@@ -81,6 +82,7 @@ function Header() {
           <img src={Logo} alt="logo" />
           <h1>Peko</h1>
         </div>
+
         <div>
           <Link to="/" className="sinlinea">
             <button className="boton">HOME</button>
@@ -96,7 +98,6 @@ function Header() {
           </button>
         </div>
       </div>
-
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Registrate</Modal.Title>
