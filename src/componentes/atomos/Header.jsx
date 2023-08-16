@@ -1,19 +1,13 @@
-<<<<<<< HEAD
+
 import "../../assets/styles/HeaderStyle.css";
 import Logo from "../../assets/images/LogoPeko.png";
 import { useState,useRef } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-=======
 import '../../assets/styles/HeaderStyle.css'
-import Logo from "../../assets/images/LogoPeko.png"
-import { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Modal from 'react-bootstrap/Modal';
->>>>>>> 0aed0bdb88d8a9f2ddd3e25d0a87b9cdc0208e1f
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 
 
@@ -22,9 +16,8 @@ function Header() {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-<<<<<<< HEAD
-  const formdata = useRef();
 
+  const formdata = useRef();
   const handlerClick = (e) => {
     e.preventDefault();
     const formData = new FormData(formdata.current);
@@ -84,9 +77,6 @@ function Header() {
         console.error("Error:", error);
       });
   };
-
-=======
->>>>>>> 0aed0bdb88d8a9f2ddd3e25d0a87b9cdc0208e1f
   return (
     <>
       <div className="navbar">
@@ -107,23 +97,26 @@ function Header() {
           <Modal.Title>Registrate</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form>
+          <Form ref={formdata}>
             <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
               <Form.Label>Email address</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Nombre"
                 autoFocus
+                name="name"
               />
               <Form.Control
                 type="telephone"
                 placeholder="Telefono"
                 autoFocus
+                name="telefono"
               />
               <Form.Control
                 type="email"
                 placeholder="Correo"
                 autoFocus
+                name="correo"
               />
             </Form.Group>
           </Form>
@@ -132,7 +125,7 @@ function Header() {
           <Button variant="secondary" onClick={handleClose}>
             Cerrar
           </Button>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" onClick={handlerClick}>
             Enviar
           </Button>
         </Modal.Footer>
