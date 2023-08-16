@@ -2,7 +2,6 @@ import '../../assets/styles/Footer.css'
 import { FaFacebook, FaTwitter } from "react-icons/fa";
 import { RiWhatsappFill, RiInstagramFill } from "react-icons/ri";
 
-
 function Tabla() {
     return (
         <>
