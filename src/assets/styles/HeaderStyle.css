@@ -13,12 +13,11 @@
   text-transform: uppercase;
   outline: 0;
   font-size: 15px;
-
 }
 h1{
   font-size: 25px;
   padding-top: 25%;
-}
+} 
 .boton {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
@@ -41,7 +40,6 @@ h1{
   color: #ffffff;
   box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
   transform: translateY(-10%);
-  
 }
 .boton {
   margin: 20px;
