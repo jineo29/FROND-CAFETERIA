@@ -9,11 +9,8 @@ import '../../assets/styles/HeaderStyle.css'
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
-
-
 function Header() {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
