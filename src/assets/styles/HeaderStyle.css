@@ -1,11 +1,12 @@
-.navbar{
-  display:flex;
+.navbar {
+  display: flex;
   justify-content: space-between;
   background-color: #333333;
   color: white;
 }
-.logo{
-  display:flex;
+
+.logo {
+  display: flex;
   justify-content: space-between;
   width: 5%;
   padding: 10px;
@@ -14,16 +15,17 @@
   outline: 0;
   font-size: 15px;
 }
-h1{
+
+h1 {
   font-size: 25px;
   padding-top: 25%;
-} 
+}
+
 .boton {
-  font-family: "Roboto", sans-serif;
+  font-family: Alata;
   text-transform: uppercase;
   outline: 0;
-  background:  #333333;
-  width: 20%;
+  background: #333333;
   border: 0;
   padding: 10px;
   margin: 20px;
@@ -31,23 +33,46 @@ h1{
   font-size: 15px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
-  cursor: pointer;  list-style: none;
+  cursor: pointer;
+  list-style: none;
   text-decoration: none;
-
+  -webkit-transition: .3s all ease;
+  -moz-transition: .3s all ease;
 }
-.boton:hover, .boton:active, .boton:focus {
+
+.boton:hover,
+.boton:active,
+.boton:focus {
   background: rgba(255, 254, 254, 0.17);
   color: #ffffff;
-  box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+  box-shadow: 5px 5px 20px rgba(59, 59, 59, 0.4);
   transform: translateY(-10%);
 }
+
 .boton {
-  margin: 20px;
-  display:inline ;
+  display: inline;
   width: 140px;
 }
 
-.sinlinea:hover, .sinlinea:active, .sinlinea:focus{
+.sinlinea:hover,
+.sinlinea:active,
+.sinlinea:focus {
   list-style: none;
   text-decoration: none;
+}
+
+@media (max-width:768px) {
+  .boton {
+    font-size: 20px;
+  }
+  .navbar {
+    display: flex;
+    justify-content: column;
+    background-color: #333333;
+    color: white;
+  }
+  h1 {
+    font-size: 20px;
+    padding-top: 25%;
+  }
 }

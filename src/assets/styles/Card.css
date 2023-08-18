@@ -28,10 +28,15 @@ img {
 
 .polaroid:hover{
     font-weight:700;
-    -webkit-transition: .5s all ease;
-    -moz-transition: .5s all ease;
-    transition: .2s all ease;
+    -webkit-transition: .10s all ease;
+    -moz-transition: .10s all ease;
+    transition: .5s all ease;
     box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
     transform: translateY(-10%);
 }
 
+/* @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .background-img{
+        width: 100%;
+    }
+} */

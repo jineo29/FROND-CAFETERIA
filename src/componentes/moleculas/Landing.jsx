@@ -1,14 +1,15 @@
-import '../../assets/styles/Landing.css'
+import { Link } from "react-router-dom";
 import conocenos from "../../assets/images/img1-conoce.png"
 import conocenos2 from "../../assets/images/img2-conoce.png"
+import '../../assets/styles/Landing.css'
 
 function DescripcionGeneral() {
     return (
         <>
             <div className="inf1">
-                <div class="hero-image">
+                <div className="hero-image">
                     <div className="hero-text">
-                        <div class="box">
+                        <div className="box">
                             <p>Peko</p>
                         </div>
                         <p>Combina a la perfección el exquisito sabor del café con repostería regional, esto en un ambiente con estilo propio y de total confort a través de la combinación de colores, texturas iluminación y formas plásticas para asegurar una experiencia inolvidable.</p>
@@ -54,11 +55,11 @@ function DescripcionGeneral() {
                         </div>
                     </div>
                     <div>
-                        <a href="/card"><h4>ver mas</h4></a>
+                        <Link to="/card"><h4>ver mas</h4></Link>
                     </div>
                 </div>
 
-                <div className='conocenos'>
+                <div className='conocenos' id="conocenos">
                     <div className='mision'>
                         <div className='titles'><p>Mision</p></div>
                         <div className='descrip-txt'><p>Ofrecer a nuestros clientes una experiencia única de degustación de cafés de alta calidad, acompañados de deliciosos productos de repostería y bollería, en un ambiente acogedor y sofisticado.</p></div>

@@ -1,12 +1,11 @@
-
-import "../../assets/styles/HeaderStyle.css";
-import Logo from "../../assets/images/LogoPeko.png";
-import { useState,useRef } from "react";
+import { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
-import '../../assets/styles/HeaderStyle.css'
-import { Link } from "react-router-dom";
+import ScrollToTop from "react-scroll-to-top";
+import Logo from "../../assets/images/LogoPeko.png";
+import "../../assets/styles/HeaderStyle.css";
 import Swal from "sweetalert2";
 
 function Header() {
@@ -19,7 +18,7 @@ function Header() {
     e.preventDefault();
     const formData = new FormData(formdata.current);
     const correo = formData.get("correo");
-    fetch("http://localhost:3000/Usuarios")
+    fetch("http://44.218.190.25:3000/Usuarios")
       .then((response) => response.json())
       .then((correosExistentes) => {
         const listaCorreos = correosExistentes.map((correos) => correos.Correo);
@@ -30,7 +29,7 @@ function Header() {
             text: `El correo  ${correo}  ya está en uso.`,
           });
         } else {
-          const URI = "http://localhost:3000/Usuarios";
+          const URI = "http://44.218.190.25:3000/Usuarios";
           const opciones = {
             method: "POST",
             headers: {
@@ -47,12 +46,8 @@ function Header() {
             .then((data) => {
               if (data.message === "Usuario registrado exitosamente") {
                 Swal.fire({
-                  position: "top-end",
-                  width: 200,
                   icon: "success",
-                  title: "Usuario Registrado",
                   text: `Correo registrado: ${correo}`,
-                  showConfirmButton: false,
                   timer: 1500,
                 }).then(() => {
                   setShow(false);
@@ -77,16 +72,24 @@ function Header() {
   return (
     <>
       <div className="navbar">
-        <div className='logo'>
+        <div className="logo">
           <img src={Logo} alt="logo" />
           <h1>Peko</h1>
         </div>
 
         <div>
-          <Link to="/" className='sinlinea'><button className='boton'>HOME</button></Link>
-          <Link to="/card" className='sinlinea'><button className='boton'>CONOCENOS</button></Link>
-          <a src="#footer" className='sinlinea'><button className='boton'>CONTACTO</button></a>
-          <button onClick={handleShow} className='boton'>REGISTRAR</button>
+          <Link to="/" className="sinlinea">
+            <button className="boton">HOME</button>
+          </Link>
+          <a href="#conocenos" className="sinlinea">
+            <button className="boton">CONOCENOS</button>
+          </a>
+          <a href="#footer" className="sinlinea">
+            <button className="boton">CONTACTO</button>
+          </a>
+          <button onClick={handleShow} className="boton">
+            REGISTRAR
+          </button>
         </div>
       </div>
       <Modal show={show} onHide={handleClose}>
@@ -127,6 +130,10 @@ function Header() {
           </Button>
         </Modal.Footer>
       </Modal>
+
+      <div className="App">
+        <ScrollToTop smooth color="#451c04" />
+      </div>
     </>
   );
 }

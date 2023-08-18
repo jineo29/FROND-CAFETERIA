@@ -33,11 +33,9 @@
     text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 .color2{
-
     width:400px; 
     height: 200px; 
     background: #6ECBA7;
-
 }
 .conoce2{
     display: flex;
@@ -353,3 +351,127 @@ p {
     margin-bottom: 1%;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .hero-image {
+        font-family: Raleway, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 1rem;
+        background-color: rgba(10, 12, 18, 1);
+        color: white;
+        min-height: 20vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .color1{
+        font-size: 60px;
+        font-family: Lilita One;
+        text-align:right;
+        width: 65%; 
+        height: 180px; 
+        background: #F46F60;
+        padding: 60px;
+        text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    }
+    .color2{
+        width:200px; 
+        height: 140px; 
+        background: #6ECBA7;
+    }
+    .img1{
+        width: 60%;
+        position: relative;
+        top: -150px;
+        left: -20px;
+    }
+    .img2{
+        width: 80%;
+        position: relative;
+        top: -60px;
+        right: -50px;
+    }
+    .conoce-peko{
+        padding-left: 60%;
+    }
+    .text-pek{
+        padding-top: 10%;
+        padding-left: 40%;
+        padding-right: 10%;
+        text-align: center;
+        font-family: Life Savers;
+        font-size: 14px;
+    }
+    .conoce2{
+        display: flex;
+        justify-content:start;
+    }
+    .conoce{
+        width: 100%;
+        height: 260px;
+        margin-bottom: 350px;
+    }
+    .text-inf {
+        color: #deac15;
+        padding-top: 5%;
+        font-size: 50px;
+        font-family: Lilita One;
+        text-align: center;
+    }
+    .text2-inf {
+        text-align: justify;
+        color: white;
+        font-size: 20px;
+        font-family: Alata;
+        padding-bottom: 10%;
+        padding: 10%;
+    }
+    .back-cards {
+        width: 100%;
+        height: 1020px;
+        position: relative;
+    }
+    .card-landing {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 30%;
+    }
+    .card-landing2 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 30%;
+    }
+    .card-landing3 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: 30%;
+    }
+    .card-landing:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+        width: 30%;
+        transform: translateY(-10%);
+        transition: .5s all ease;
+    
+    }
+    .card-landing2:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+        width: 30%;
+        transform: translateY(-10%);
+        transition: .5s all ease;
+    
+    }
+    .card-landing3:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+        width: 30%;
+        transform: translateY(-10%);
+        transition: .5s all ease;
+    
+    }
+    .descrip-txt2{
+        text-align: justify;
+        font-size: 22px;
+        padding: 5%;
+        height: 230px;
+    }
+}
