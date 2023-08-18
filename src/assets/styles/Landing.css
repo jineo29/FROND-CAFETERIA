@@ -261,7 +261,7 @@ p {
     --gradX: 100%;
     --gradY: 50%;
     --c1: rgb(255, 255, 255);
-    --c2: rgba(168, 239, 255, 0.1);
+    --c2: rgba(168, 239, 255, 0.034);
 }
 
 .wrapper {
@@ -269,6 +269,7 @@ p {
 }
 
 .box {
+    background-color: #00000049;
     font-family: Alata;
     font-size: 3vw;
     margin: max(1rem, 10vw);
