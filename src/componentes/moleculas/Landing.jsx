@@ -40,7 +40,7 @@ function DescripcionGeneral() {
                     <div className='container-cafe'>
                         <div className='card-landing'>
                             <div className='number'><p>1</p></div>
-                            <div className='title'><p>Capuccino</p></div>
+                            <div className='title'><p>Capuchino</p></div>
                             <div className='description'><p>Es una bebida de origen italiano que se prepara con café expreso y leche montada con vapor para darle cremosidad. Suele llevar cacao o canela por encima. Es un café dulce y espumoso.</p></div>
                         </div>
                         <div className='card-landing2'>

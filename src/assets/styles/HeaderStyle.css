@@ -61,18 +61,33 @@ h1 {
   text-decoration: none;
 }
 
-@media (max-width:768px) {
+@media screen and (min-width:768px) and (max-width:1096px) {
   .boton {
     font-size: 20px;
   }
   .navbar {
     display: flex;
     justify-content: column;
-    background-color: #333333;
-    color: white;
   }
   h1 {
     font-size: 20px;
     padding-top: 25%;
   }
+}
+
+@media screen and (min-width:390px) and (max-width:767px) {
+  .boton {
+    font-size: 14px;
+  }
+  .navbar {
+    text-align: center;
+  }
+  h1 {
+    font-size: 12px;
+    padding-top: 2%;
+  }
+  .logo {
+    width: 10%;
+  }
+
 }

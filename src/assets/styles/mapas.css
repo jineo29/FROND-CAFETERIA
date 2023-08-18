@@ -49,3 +49,17 @@ iframe {
         height: 100px;
     }
 }
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    iframe {
+        padding: 5%;
+        border-radius: 20px;
+        width: 190px;
+        height:120px;
+    }
+    .txt-con {
+        font-size: 20px;
+    }
+    .container12 {
+        height: 60px;
+    }
+}

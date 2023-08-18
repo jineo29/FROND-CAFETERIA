@@ -13,8 +13,8 @@
 .container-carusel {
   display: flex;
   gap: 10px;
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 160px;
+  margin-bottom: 160px;
 }
 
 .card {
@@ -38,5 +38,14 @@
   .container-carusel {
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 767px) {
+  .container-carusel {
+    margin-top: 160px;
+    margin-bottom: 20px;
+  }
+  .card{
+    border: 0;
   }
 }

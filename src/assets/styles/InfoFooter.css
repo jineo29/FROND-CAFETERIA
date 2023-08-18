@@ -16,3 +16,12 @@
     font-family: Life Savers;
     padding: 2%;
 }
+@media screen and (min-width: 390px) and (max-width: 767px){
+    .txt-im2 {
+        font-size: 12px;
+        padding: 4%;
+    }
+    .td-im {
+        height: 170px;
+    }
+}
