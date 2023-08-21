@@ -61,11 +61,21 @@ function Header() {
               }
             })
             .catch((error) => {
+              Swal.fire({
+                icon: "error",
+                title: "Error en la solicitud",
+                text: "Hubo un problema al intentar registrar el usuario.",
+              });
               console.error("Error:", error);
             });
         }
       })
       .catch((error) => {
+        Swal.fire({
+          icon: "error",
+          title: "Error en la solicitud",
+          text: "Estamos teniendo Problemas con nuestro Sistema",
+        });
         console.error("Error:", error);
       });
   };
