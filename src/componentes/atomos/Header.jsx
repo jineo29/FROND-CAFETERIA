@@ -1,11 +1,11 @@
-import { useState, useRef } from "react";
+import { useState, useRef } from 'react';
 import { Link } from "react-router-dom";
-import Button from "react-bootstrap/Button";
-import Form from "react-bootstrap/Form";
-import Modal from "react-bootstrap/Modal";
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import Modal from 'react-bootstrap/Modal';
 import ScrollToTop from "react-scroll-to-top";
-import Logo from "../../assets/images/LogoPeko.png";
-import "../../assets/styles/HeaderStyle.css";
+import Logo from "../../assets/images/LogoPeko.png"
+import '../../assets/styles/HeaderStyle.css'
 import Swal from "sweetalert2";
 
 function Header() {
@@ -14,7 +14,7 @@ function Header() {
   const handleShow = () => setShow(true);
   const formdata = useRef();
 
-  const handlerClick = (e) => {
+ const handlerClick = (e) => {
     e.preventDefault();
     const formData = new FormData(formdata.current);
     const correo = formData.get("correo");
@@ -79,53 +79,36 @@ function Header() {
         console.error("Error:", error);
       });
   };
+
   return (
     <>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <div className="logo">
-            <img src={Logo} alt="logo" />
-          </div>
-          <Link class="navbar-brand" to="/">
-            PEKO
-          </Link>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+        <div class="container-fluid"><div className='logo'>
+          <img src={Logo} alt="logo" />
+        </div>
+          <Link class="navbar-brand" to="/">PEKO</Link>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <Link class="nav-link" aria-current="page" to="/">
-                  HOME
-                </Link>
+                <Link class="nav-link" aria-current="page" to="/">HOME</Link>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#conocenos">
-                  CONOCENOS
-                </a>
+                <a class="nav-link " href="#conocenos">CONOCENOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="#footer">
-                  CONTACTANOS
-                </a>
+                <a class="nav-link " href="#footer">CONTACTANOS</a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link " onClick={handleShow}>
-                  REGISTRATE
-                </a>
+              <li class="nav-item " >
+                <a class="nav-link " onClick={handleShow}>REGISTRATE</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Registrate</Modal.Title>
@@ -133,25 +116,21 @@ function Header() {
         <Modal.Body>
           <Form ref={formdata}>
             <Form.Group className="mb-1" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email address</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Nombre"
-                autoFocus
-                name="name"
-              />
+                name='name'
+                autoFocus /><br />
               <Form.Control
                 type="telephone"
                 placeholder="Telefono"
-                autoFocus
-                name="telefono"
-              />
+                name='telefono'
+                autoFocus /> <br />
               <Form.Control
                 type="email"
                 placeholder="Correo"
-                autoFocus
-                name="correo"
-              />
+                name='correo'
+                autoFocus />
             </Form.Group>
           </Form>
         </Modal.Body>
@@ -164,6 +143,7 @@ function Header() {
           </Button>
         </Modal.Footer>
       </Modal>
+
       <div className="App">
         <ScrollToTop smooth color="#451c04" />
       </div>

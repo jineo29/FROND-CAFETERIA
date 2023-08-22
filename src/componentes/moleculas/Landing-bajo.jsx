@@ -25,6 +25,9 @@ function LandingBajo() {
           <div className="td-desc"><p>CONOCE NUESTRA GRAN CANTIDAD DE PRODUCTOS Y LOS DIFERENTES TIPOS DE CAFES DE LAS REGIONES MAS IMPORTANTES DEL PAIS </p></div>
         </div>
       </div>
+
+
+
     </>
   );
 }

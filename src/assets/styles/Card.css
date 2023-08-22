@@ -18,25 +18,39 @@ img {
 .container-cafe {
     display: flex;
     justify-content: space-around;
-    margin: 25px;
+    margin: 34px;
+
 }
-.background-img{
+
+.background-img {
     background-image: url("../images/Rectangle 158.png");
     background-position: right, left top;
     background-repeat: no-repeat, repeat;
 }
 
-.polaroid:hover{
-    font-weight:700;
+.polaroid:hover {
+    font-weight: 700;
     -webkit-transition: .10s all ease;
     -moz-transition: .10s all ease;
     transition: .5s all ease;
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-10%);
 }
 
-/* @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .background-img{
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .background-img {
         width: 100%;
     }
-} */
+
+    .container-cafe {
+        margin: 10px;
+        margin-top: 5%;
+        font-size: 14px;
+        font-family: Alata
+    }
+
+    .cd-1 {
+        display: flex;
+        justify-content: space-around;
+    }
+}
